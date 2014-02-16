@@ -1,9 +1,8 @@
 <%= div_for comment do %>
-	<p>
+	<div>
 		<strong>
 			Posted <%= time_ago_in_words(comment.created_at) %> ago
-		</strong></br>
-		<div><%= comment.created_at %></div>
+		</strong>
 		<div><%= comment.body %></div>
-	</p>
+	</div>
 <% end %>
